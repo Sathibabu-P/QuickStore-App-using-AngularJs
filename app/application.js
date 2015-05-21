@@ -1,5 +1,5 @@
 
-var mainApp = angular.module("mainApp", ['ngRoute','ui.bootstrap','uiSlider', 'ngAnimate']);
+var mainApp = angular.module("mainApp", ['ngRoute','ui.bootstrap','uiSlider']);
 
 
 

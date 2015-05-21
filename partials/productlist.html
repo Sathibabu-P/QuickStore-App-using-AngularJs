@@ -15,9 +15,9 @@
             </form>
             <!-- product list display -->
             <div class="row">
-                <div class="col-md-4"  ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}" ng-repeat="product in products | filter:priceRange | filter:Brandfilters | filter:Query | orderBy:'Cost'" >
+                <div class="col-md-4"  ng-repeat="product in products | filter:priceRange | filter:Brandfilters | filter:Query | orderBy:'Cost'" >
                     <div class="thumbnail">
-                         <a  href="#viewProduct/{{products.indexOf(product)}}" >
+                         <a  href="#viewProduct/{{products.indexOf(product)}}">
                         <img ng-src="{{product.ImgUrl}}" ng-show="product.ImgUrl" />
                         </a>
                         <div class="caption">
