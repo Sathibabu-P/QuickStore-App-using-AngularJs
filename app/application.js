@@ -1,5 +1,5 @@
 
-var mainApp = angular.module("mainApp", ['ngRoute']);
+var mainApp = angular.module("mainApp", ['ngRoute','ui.bootstrap','uiSlider', 'ngAnimate']);
 
 
 
@@ -10,7 +10,7 @@ var mainApp = angular.module("mainApp", ['ngRoute']);
                   templateUrl: 'partials/productlist.html',
                   controller: 'ProductListController'
                }).
-               when('/viewProduct/:ProductName', {
+               when('/viewProduct/:ProductId', {
                   templateUrl: 'partials/viewproduct.html',
                   controller: 'viewProductController'
                }).              
